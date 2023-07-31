@@ -1,3 +1,6 @@
+##created by A.G. Owusu
+##R script to compare country level irrgated area fro fAO aquastat portal to RS landcover products for 2019
+
 #Set working directory (Remember to change from "/" to "/")
 library("gridExtra")
 library("cowplot")
