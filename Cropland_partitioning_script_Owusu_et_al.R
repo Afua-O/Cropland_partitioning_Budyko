@@ -1,6 +1,7 @@
+###created by A.G. Owusu
 ##R script for Owusu et al
-#A Framework for Disaggregating Remote-Sensing Cropland into Rainfed and 
-#Irrigated Classes at Continental Scale 
+##A Framework for Disaggregating Remote-Sensing Cropland into Rainfed and 
+##Irrigated Classes at Continental Scale 
 
 library(dplyr)
 library(terra)
@@ -286,7 +287,7 @@ exact_extract(ETbIrr, st_as_sf(AfricaB), c('count', 'frac'), append_cols = 'HYBA
   rename_with(function(n) sub('frac', 'freq', n))
 
 #---------------
-#Stats for formal irrigation irrigated vs supplementary/informal irrigation
+#Stats for formal irrigation irrigated vs supplemental/informal irrigation
 #number of pixels- continental
 exact_extract(formal_irri, st_as_sf(Africa_whole), c('count', 'frac'), append_cols = 'Id') %>%
   mutate(across(starts_with('frac'), function(x) x * count))  %>%
