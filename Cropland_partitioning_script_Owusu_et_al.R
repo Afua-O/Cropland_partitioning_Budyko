@@ -1,7 +1,8 @@
-###created by A.G. Owusu
-##R script for Owusu et al
-##A Framework for Disaggregating Remote-Sensing Cropland into Rainfed and 
-##Irrigated Classes at Continental Scale 
+##Author: Afua Owusu
+##Created: June 2023
+##Description: Script for Owusu et al: A Framework for Disaggregating Remote-Sensing
+##              Cropland into Rainfed and Irrigated Classes at Continental Scale 
+#-------------------------------------------------------------------------------
 
 library(dplyr)
 library(terra)
