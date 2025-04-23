@@ -28,17 +28,17 @@ date_year<- seq(as.Date("2019/01/01"), as.Date("2019/12/31"), by="year")
 #Import climate variables:  P, ET, ETo
 
 #P
-path = "/home/tmp_disk/P_Africa/Mswep"
+path = "/home/tmp_disk/P_Africa"
 P_list <- list.files(path=path, pattern='tif$', full.names=TRUE)
 P_stack <- rast(P_list)
 
 #ET 
-path = "/home/tmp_disk/ET_Africa/Ssebop/"
+path = "/home/tmp_disk/ET_Africa"
 ET_list <- list.files(path=path, pattern='tif$', full.names=TRUE)
 ET_stack <- rast(ET_list)
 
 #ETo
-path = "/home/tmp_disk/ETo_Africa/WaporEto"
+path = "/home/tmp_disk/ETo_Africa"
 ETo_list <- list.files(path=path, pattern='tif$', full.names=TRUE)
 ETo_stack <- rast(ETo_list)
 
